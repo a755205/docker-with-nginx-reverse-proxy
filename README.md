@@ -24,7 +24,9 @@
     sh down-services.sh
 ```
 
-##成功運行後可以看下列網址效果
+## 成功運行後可以看下列網址效果
+
+    > 本機運行時要設置hosts
 
     http://nginx1.yourdomain.com/
 
