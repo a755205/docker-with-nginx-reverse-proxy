@@ -1,0 +1,18 @@
+version: "3"
+
+# 需要先下指令建立外部網路
+# docker network create nginx-proxy
+
+networks:
+  nginx-proxy:
+    external: true
+services:
+  nginx-proxy:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-conf:/etc/nginx/conf.d
+      - ./html:/usr/share/nginx/html
+    networks:
+      - nginx-proxy

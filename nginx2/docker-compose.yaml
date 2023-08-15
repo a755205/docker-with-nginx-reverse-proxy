@@ -1,0 +1,15 @@
+version: "3"
+
+networks:
+  nginx-proxy:
+    external: true
+services:
+  nginx3:
+    image: nginx:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - ./nginx-conf:/etc/nginx/conf.d
+      - ./html:/usr/share/nginx/html
+    networks:
+      - nginx-proxy
