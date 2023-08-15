@@ -23,3 +23,9 @@
 ```
     sh down-services.sh
 ```
+
+##成功運行後可以看下列網址效果
+
+    http://nginx1.yourdomain.com/
+
+    http://nginx2.yourdomain.com/
